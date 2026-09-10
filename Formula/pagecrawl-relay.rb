@@ -35,9 +35,11 @@ class PagecrawlRelay < Formula
   end
 
   def install
-    # The release assets are named per platform; install them under one name so the
-    # command is the same everywhere and upgrades replace it cleanly.
-    bin.install Dir["pagecrawl-relay-*"].first => "pagecrawl-relay"
+    # A bare binary download stages exactly one file, whose name is the release asset's
+    # and so differs per platform. Taking whatever is there beats matching a pattern
+    # against a name Homebrew is free to change, and installs it under one command
+    # name so upgrades replace it cleanly.
+    bin.install Dir["*"].first => "pagecrawl-relay"
   end
 
   # `brew services start pagecrawl-relay` for a machine that should relay whenever it
