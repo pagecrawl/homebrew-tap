@@ -7,30 +7,30 @@
 class PagecrawlRelay < Formula
   desc "Route your own PageCrawl checks through a computer you own"
   homepage "https://github.com/pagecrawl/pagecrawl-relay"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.4/pagecrawl-relay-darwin-arm64"
-      sha256 "398aba631ae86a866e1d700dd7af7a33b63410a0176a4cb5d9b0aae48f892317"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-darwin-arm64"
+      sha256 "740039b1db04391880105a1151aa3743f6546bc882a9c6edc4fb3726452fd0c3"
     end
 
     on_intel do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.4/pagecrawl-relay-darwin-amd64"
-      sha256 "658c7a4d5889d07727f62bae3eefc92238fb71e6571ea0700caa45650f770ff5"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-darwin-amd64"
+      sha256 "e428b4ce765cd45d487dbdd6de9434f3bb2a6961745d68ece79e8dd95807468d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.4/pagecrawl-relay-linux-arm64"
-      sha256 "1dcd3e6197acc67aaf00bdac074906e3fac13c96ba0872edcb092b643ac1707a"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-linux-arm64"
+      sha256 "895488d0f572f1e12fcac9cbf702099dd659e9e9e71de26841f0045fd23706e6"
     end
 
     on_intel do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.4/pagecrawl-relay-linux-amd64"
-      sha256 "cdb3ddba9166a79b3e04470d76ce7fe4abc20c58ef9b61f1415c509b16c427ff"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-linux-amd64"
+      sha256 "f158f4e76c1001d6d3e55dfc06bc5a75116b1596a341702b7d47b3f426bab131"
     end
   end
 
