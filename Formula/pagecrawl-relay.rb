@@ -1,36 +1,36 @@
 # PageCrawl Relay.
 #
-# Homebrew rather than a downloaded binary for two reasons that matter more than
-# convenience: `brew upgrade` is a real update path, and brew fetches with curl, so
-# the file never carries the quarantine flag that makes macOS refuse an unsigned
-# download. The binaries are not code-signed yet; see the repository's README.
+# Homebrew rather than a downloaded binary because `brew upgrade` is a real update
+# path. The macOS binaries are signed with an Apple Developer ID and notarized as of
+# v0.1.7, so a browser download no longer warns either; this installs the
+# command-line program, while the release's .dmg carries the menu-bar app.
 class PagecrawlRelay < Formula
   desc "Route your own PageCrawl checks through a computer you own"
   homepage "https://github.com/pagecrawl/pagecrawl-relay"
-  version "0.1.5"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-darwin-arm64"
-      sha256 "740039b1db04391880105a1151aa3743f6546bc882a9c6edc4fb3726452fd0c3"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.7/pagecrawl-relay-darwin-arm64"
+      sha256 "7af21d16d10e1e18a574d9c3520b43990e4877a81fff4d76e6c29c8aa9924f2d"
     end
 
     on_intel do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-darwin-amd64"
-      sha256 "e428b4ce765cd45d487dbdd6de9434f3bb2a6961745d68ece79e8dd95807468d"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.7/pagecrawl-relay-darwin-amd64"
+      sha256 "9ae3ec8797422e9c3e248b77985036947ecbb525a16b8bec840f8d2523bf9c2d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-linux-arm64"
-      sha256 "895488d0f572f1e12fcac9cbf702099dd659e9e9e71de26841f0045fd23706e6"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.7/pagecrawl-relay-linux-arm64"
+      sha256 "6d882602bb55e81919ce481289c0e6a24f858a786a9c5033350872cf8a2f5432"
     end
 
     on_intel do
-      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.5/pagecrawl-relay-linux-amd64"
-      sha256 "f158f4e76c1001d6d3e55dfc06bc5a75116b1596a341702b7d47b3f426bab131"
+      url "https://github.com/pagecrawl/pagecrawl-relay/releases/download/v0.1.7/pagecrawl-relay-linux-amd64"
+      sha256 "50a17b4793319fcb16204ff4fb76c3ad0c91367de0b4e37f60d8d08b1c2a1433"
     end
   end
 
